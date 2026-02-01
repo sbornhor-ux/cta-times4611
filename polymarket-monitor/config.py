@@ -1,0 +1,10 @@
+DATABASE_PATH = "prediction_markets.db"
+POLL_INTERVAL_SECONDS = 60
+MAX_CALLS_PER_MINUTE = 100
+GAMMA_API_BASE = "https://gamma-api.polymarket.com"
+CLOB_API_BASE = "https://clob.polymarket.com"
+MAX_CONSECUTIVE_ERRORS = 5
+MAX_BACKOFF_SECONDS = 300
+MARKETS_BATCH_SIZE = 100
+LOG_FILE = "polymarket_monitor.log"
+LOG_LEVEL = "INFO"
