@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam & Molly — October 4, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-monogram">S <span class="amp">&</span> M</a>
+      <ul class="nav-links">
+        <li><a href="#our-story">Our Story</a></li>
+        <li><a href="#details">Details</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#travel">Travel</a></li>
+        <li><a href="#registry">Registry</a></li>
+        <li><a href="#rsvp" class="nav-rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-botanical hero-botanical--left">
+      <svg viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg" class="botanical-svg">
+        <path d="M100,480 C100,380 60,320 80,240 C100,160 140,140 100,80 C80,50 70,30 100,10" stroke="#4a7c59" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="60" cy="200" rx="45" ry="25" transform="rotate(-30 60 200)" fill="#4a7c59" opacity="0.7"/>
+        <ellipse cx="140" cy="160" rx="40" ry="22" transform="rotate(25 140 160)" fill="#4a7c59" opacity="0.6"/>
+        <ellipse cx="55" cy="280" rx="50" ry="28" transform="rotate(-40 55 280)" fill="#5a8f6a" opacity="0.5"/>
+        <ellipse cx="145" cy="240" rx="42" ry="24" transform="rotate(20 145 240)" fill="#3d6b4a" opacity="0.6"/>
+        <ellipse cx="70" cy="120" rx="35" ry="20" transform="rotate(-20 70 120)" fill="#4a7c59" opacity="0.55"/>
+        <circle cx="100" cy="80" r="12" fill="#c9a0b0" opacity="0.9"/>
+        <circle cx="85" cy="68" r="8" fill="#d4b0c0" opacity="0.8"/>
+        <circle cx="115" cy="72" r="8" fill="#c9a0b0" opacity="0.8"/>
+        <circle cx="100" cy="58" r="9" fill="#d4b0c0" opacity="0.85"/>
+        <circle cx="92" cy="10" r="10" fill="#c9a0b0" opacity="0.9"/>
+      </svg>
+    </div>
+    <div class="hero-botanical hero-botanical--right">
+      <svg viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg" class="botanical-svg" style="transform: scaleX(-1)">
+        <path d="M100,480 C100,380 60,320 80,240 C100,160 140,140 100,80 C80,50 70,30 100,10" stroke="#4a7c59" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="60" cy="200" rx="45" ry="25" transform="rotate(-30 60 200)" fill="#4a7c59" opacity="0.7"/>
+        <ellipse cx="140" cy="160" rx="40" ry="22" transform="rotate(25 140 160)" fill="#4a7c59" opacity="0.6"/>
+        <ellipse cx="55" cy="280" rx="50" ry="28" transform="rotate(-40 55 280)" fill="#5a8f6a" opacity="0.5"/>
+        <ellipse cx="145" cy="240" rx="42" ry="24" transform="rotate(20 145 240)" fill="#3d6b4a" opacity="0.6"/>
+        <ellipse cx="70" cy="120" rx="35" ry="20" transform="rotate(-20 70 120)" fill="#4a7c59" opacity="0.55"/>
+        <circle cx="100" cy="80" r="12" fill="#c9a0b0" opacity="0.9"/>
+        <circle cx="85" cy="68" r="8" fill="#d4b0c0" opacity="0.8"/>
+        <circle cx="115" cy="72" r="8" fill="#c9a0b0" opacity="0.8"/>
+        <circle cx="100" cy="58" r="9" fill="#d4b0c0" opacity="0.85"/>
+        <circle cx="92" cy="10" r="10" fill="#c9a0b0" opacity="0.9"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Together with their families</p>
+      <h1 class="hero-names">Sam <span class="script-amp">&amp;</span> Molly</h1>
+      <div class="hero-divider">
+        <span class="divider-line"></span>
+        <span class="divider-ornament">✦</span>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-date">Saturday, the Fourth of October</p>
+      <p class="hero-year">Two Thousand and Twenty-Six</p>
+      <p class="hero-location">Chicago, Illinois</p>
+      <a href="#rsvp" class="hero-cta">Kindly Reply</a>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown-bar">
+    <div class="countdown-inner">
+      <div class="countdown-unit">
+        <span class="countdown-number" id="days">---</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="hours">--</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="minutes">--</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="seconds">--</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+    <p class="countdown-tagline">Until we say "I do"</p>
+  </section>
+
+  <!-- Our Story -->
+  <section class="section story" id="our-story">
+    <div class="section-header">
+      <p class="section-eyebrow">How It Happened</p>
+      <h2 class="section-title">Our Story</h2>
+      <div class="ornament-row"><span>❧</span></div>
+    </div>
+
+    <div class="story-timeline">
+      <div class="timeline-item timeline-item--left">
+        <div class="timeline-photo placeholder-photo">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon">◎</span>
+            <p>Add your photo here</p>
+            <small>Instagram photo from when you met</small>
+          </div>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">2020</span>
+          <h3>The Beginning</h3>
+          <p>Every great love story has a fateful first chapter. Add a line or two here about how you two first crossed paths — the city, the circumstances, the spark.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--right">
+        <div class="timeline-content">
+          <span class="timeline-date">2022</span>
+          <h3>Adventures Together</h3>
+          <p>From cozy Chicago winters to wherever the road took you, this is where your story deepened. Replace this with your own memory — a trip, a moment, a turning point.</p>
+        </div>
+        <div class="timeline-photo placeholder-photo">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon">◎</span>
+            <p>Add your photo here</p>
+            <small>A favorite travel or adventure shot</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--left">
+        <div class="timeline-photo placeholder-photo">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon">◎</span>
+            <p>Add your photo here</p>
+            <small>Engagement photo</small>
+          </div>
+        </div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025</span>
+          <h3>She Said Yes</h3>
+          <p>The proposal. Tell the story exactly as it happened — where you were, what was said, what made it perfect. This is the one everyone reads twice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floral Banner -->
+  <div class="floral-banner">
+    <div class="floral-banner-inner">
+      <svg viewBox="0 0 1200 120" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,60 Q150,10 300,60 Q450,110 600,60 Q750,10 900,60 Q1050,110 1200,60" stroke="#4a7c59" stroke-width="1.5" fill="none" opacity="0.4"/>
+        <path d="M0,60 Q150,110 300,60 Q450,10 600,60 Q750,110 900,60 Q1050,10 1200,60" stroke="#4a7c59" stroke-width="1" fill="none" opacity="0.25"/>
+        <circle cx="300" cy="60" r="6" fill="#c9a0b0" opacity="0.7"/>
+        <circle cx="600" cy="60" r="6" fill="#c9a0b0" opacity="0.7"/>
+        <circle cx="900" cy="60" r="6" fill="#c9a0b0" opacity="0.7"/>
+        <circle cx="150" cy="35" r="4" fill="#4a7c59" opacity="0.5"/>
+        <circle cx="450" cy="85" r="4" fill="#4a7c59" opacity="0.5"/>
+        <circle cx="750" cy="35" r="4" fill="#4a7c59" opacity="0.5"/>
+        <circle cx="1050" cy="85" r="4" fill="#4a7c59" opacity="0.5"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- Event Details -->
+  <section class="section details" id="details">
+    <div class="section-header">
+      <p class="section-eyebrow">Join Us</p>
+      <h2 class="section-title">The Details</h2>
+      <div class="ornament-row"><span>❧</span></div>
+    </div>
+
+    <div class="details-cards">
+      <!-- Ceremony Card -->
+      <div class="detail-card">
+        <div class="detail-card-icon">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40,10 L40,70 M20,30 Q40,15 60,30 M15,50 Q40,35 65,50" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <circle cx="40" cy="10" r="4" fill="#c9a0b0"/>
+            <circle cx="20" cy="30" r="3" fill="#c9a0b0"/>
+            <circle cx="60" cy="30" r="3" fill="#c9a0b0"/>
+            <circle cx="15" cy="50" r="3" fill="#c9a0b0"/>
+            <circle cx="65" cy="50" r="3" fill="#c9a0b0"/>
+          </svg>
+        </div>
+        <div class="detail-card-tag">Ceremony</div>
+        <h3 class="detail-card-venue">Lincoln Park Conservatory</h3>
+        <div class="detail-card-divider"></div>
+        <p class="detail-card-address">2391 N Stockton Drive<br/>Chicago, IL 60614</p>
+        <div class="detail-card-time">
+          <span class="time-label">Saturday, October 4, 2026</span>
+          <span class="time-value">4:00 in the Afternoon</span>
+        </div>
+        <p class="detail-card-note">Guests are invited to arrive by 3:30 PM. The ceremony will take place in the Fern Room among the Victorian glasshouse palms and exotic botanicals. Please note the conservatory requires guests to remain on marked paths.</p>
+        <a href="https://www.chicagoparkdistrict.com/parks-facilities/lincoln-park-conservatory" class="detail-card-link" target="_blank" rel="noopener">Venue Info ↗</a>
+      </div>
+
+      <!-- Reception Card -->
+      <div class="detail-card">
+        <div class="detail-card-icon">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M20,65 L20,25 Q20,15 30,15 L50,15 Q60,15 60,25 L60,65" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M15,65 L65,65" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <rect x="32" y="35" width="16" height="20" rx="2" stroke="#4a7c59" stroke-width="1.2" fill="none"/>
+            <circle cx="40" cy="28" r="5" stroke="#c9a0b0" stroke-width="1.5" fill="none"/>
+            <circle cx="40" cy="28" r="2" fill="#c9a0b0"/>
+          </svg>
+        </div>
+        <div class="detail-card-tag">Reception</div>
+        <h3 class="detail-card-venue">Nic + Junior's</h3>
+        <div class="detail-card-divider"></div>
+        <p class="detail-card-address">2464 N Lincoln Ave<br/>Chicago, IL 60614</p>
+        <div class="detail-card-time">
+          <span class="time-label">Saturday, October 4, 2026</span>
+          <span class="time-value">6:00 in the Evening</span>
+        </div>
+        <p class="detail-card-note">Cocktail hour begins at 6:00 PM, followed by dinner and dancing. Nic + Junior's signature Italian-American fare awaits — expect fresh pasta, pours of something wonderful, and a celebration that lasts well into the evening.</p>
+        <a href="https://www.nicandjuniors.com" class="detail-card-link" target="_blank" rel="noopener">Venue Info ↗</a>
+      </div>
+    </div>
+
+    <!-- Dress Code -->
+    <div class="dress-code">
+      <div class="dress-code-inner">
+        <span class="dress-code-icon">✦</span>
+        <div>
+          <h4>Dress Code: Black Tie Optional</h4>
+          <p>We invite you to dress in the spirit of a Victorian garden party — think florals, rich jewel tones, romantic silhouettes, and refined elegance. Garden-party heels are not recommended; the conservatory grounds feature cobblestone and grass.</p>
+        </div>
+        <span class="dress-code-icon">✦</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="section-header">
+      <p class="section-eyebrow">Us, in Pictures</p>
+      <h2 class="section-title">Gallery</h2>
+      <div class="ornament-row"><span>❧</span></div>
+      <p class="section-note">Replace these placeholders with your favorite Instagram photos together.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall placeholder-photo">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">◎</span>
+          <small>Portrait — tall format</small>
+        </div>
+      </div>
+      <div class="gallery-item placeholder-photo">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">◎</span>
+          <small>Candid moment</small>
+        </div>
+      </div>
+      <div class="gallery-item placeholder-photo">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">◎</span>
+          <small>Travel or adventure</small>
+        </div>
+      </div>
+      <div class="gallery-item gallery-item--wide placeholder-photo">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">◎</span>
+          <small>Landscape — wide format</small>
+        </div>
+      </div>
+      <div class="gallery-item placeholder-photo">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">◎</span>
+          <small>Engagement photo</small>
+        </div>
+      </div>
+      <div class="gallery-item placeholder-photo">
+        <div class="placeholder-inner">
+          <span class="placeholder-icon">◎</span>
+          <small>Favorite together</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Travel & Logistics -->
+  <section class="section travel" id="travel">
+    <div class="section-header">
+      <p class="section-eyebrow">Getting Here</p>
+      <h2 class="section-title">Travel &amp; Lodging</h2>
+      <div class="ornament-row"><span>❧</span></div>
+    </div>
+
+    <div class="travel-grid">
+      <div class="travel-card">
+        <div class="travel-card-icon">✈</div>
+        <h4>Flying In</h4>
+        <p>Chicago O'Hare (ORD) and Midway (MDW) both serve the city. From ORD, the Blue Line CTA runs directly downtown in about 45 minutes. Rideshare is 30–40 minutes depending on traffic.</p>
+      </div>
+      <div class="travel-card">
+        <div class="travel-card-icon">🏨</div>
+        <h4>Hotel Block</h4>
+        <p>We've reserved a room block at the <strong>Belden-Stratford</strong>, a historic landmark steps from Lincoln Park. Use code <strong>SMMOLLY26</strong> for our rate. Block expires September 1, 2026.</p>
+      </div>
+      <div class="travel-card">
+        <div class="travel-card-icon">🚖</div>
+        <h4>Getting Around</h4>
+        <p>The conservatory and Nic + Junior's are both in Lincoln Park, less than 10 minutes apart. We'll arrange a shuttle between venues for guests. Details to follow closer to the date.</p>
+      </div>
+      <div class="travel-card">
+        <div class="travel-card-icon">🌳</div>
+        <h4>Things to Do</h4>
+        <p>Make a weekend of it — Lincoln Park Zoo, the lakefront trail, the Chicago History Museum, and endless great restaurants are all within walking distance of our venues.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registry -->
+  <section class="section registry" id="registry">
+    <div class="registry-inner">
+      <div class="section-header">
+        <p class="section-eyebrow">If You Wish</p>
+        <h2 class="section-title">Registry</h2>
+        <div class="ornament-row"><span>❧</span></div>
+      </div>
+      <p class="registry-note">Your presence at our wedding is the greatest gift of all. If you'd like to celebrate us further, we're registered at the following:</p>
+      <div class="registry-links">
+        <a href="#" class="registry-btn">
+          <span class="registry-btn-store">Crate &amp; Barrel</span>
+          <span class="registry-btn-arrow">→</span>
+        </a>
+        <a href="#" class="registry-btn">
+          <span class="registry-btn-store">Williams Sonoma</span>
+          <span class="registry-btn-arrow">→</span>
+        </a>
+        <a href="#" class="registry-btn">
+          <span class="registry-btn-store">Honeyfund</span>
+          <span class="registry-btn-sub">(Honeymoon Fund)</span>
+          <span class="registry-btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section rsvp" id="rsvp">
+    <div class="rsvp-bg-botanical">
+      <svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" opacity="0.12">
+        <path d="M200,580 C200,480 150,400 170,300 C190,200 240,180 200,100 C180,60 160,30 200,10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="140" cy="240" rx="70" ry="38" transform="rotate(-30 140 240)" fill="#fff"/>
+        <ellipse cx="260" cy="200" rx="65" ry="35" transform="rotate(25 260 200)" fill="#fff"/>
+        <ellipse cx="130" cy="340" rx="75" ry="42" transform="rotate(-40 130 340)" fill="#fff"/>
+        <ellipse cx="265" cy="290" rx="68" ry="38" transform="rotate(20 265 290)" fill="#fff"/>
+        <circle cx="200" cy="100" r="18" fill="#fff"/>
+        <circle cx="180" cy="78" r="12" fill="#fff"/>
+        <circle cx="220" cy="84" r="12" fill="#fff"/>
+        <circle cx="200" cy="60" r="14" fill="#fff"/>
+      </svg>
+    </div>
+    <div class="rsvp-inner">
+      <div class="section-header section-header--light">
+        <p class="section-eyebrow">We Hope to See You There</p>
+        <h2 class="section-title">Kindly Reply</h2>
+        <div class="ornament-row"><span>❧</span></div>
+        <p class="rsvp-deadline">Please respond by <strong>September 1, 2026</strong></p>
+      </div>
+
+      <form class="rsvp-form" onsubmit="handleRsvp(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Attendance</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="attendance" value="yes" required />
+              <span class="radio-custom"></span>
+              Joyfully Accepts
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="attendance" value="no" />
+              <span class="radio-custom"></span>
+              Regretfully Declines
+            </label>
+          </div>
+        </div>
+        <div class="form-group" id="meal-group">
+          <label>Meal Preference</label>
+          <div class="radio-group radio-group--meals">
+            <label class="radio-option">
+              <input type="radio" name="meal" value="beef" />
+              <span class="radio-custom"></span>
+              Beef
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="meal" value="fish" />
+              <span class="radio-custom"></span>
+              Fish
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="meal" value="vegetarian" />
+              <span class="radio-custom"></span>
+              Vegetarian
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="dietary">Dietary Restrictions or Notes</label>
+          <textarea id="dietary" name="dietary" rows="3" placeholder="Allergies, dietary needs, or a note for us…"></textarea>
+        </div>
+        <button type="submit" class="rsvp-submit">Send My Reply</button>
+      </form>
+      <div class="rsvp-success" id="rsvp-success">
+        <div class="success-ornament">✦</div>
+        <h3>Thank You!</h3>
+        <p>We've received your reply and can't wait to celebrate with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-botanical">
+      <svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50,38 C50,28 35,22 42,14 C49,6 58,8 50,2" stroke="#4a7c59" stroke-width="1.2" fill="none" stroke-linecap="round" opacity="0.6"/>
+        <ellipse cx="38" cy="18" rx="14" ry="8" transform="rotate(-25 38 18)" fill="#4a7c59" opacity="0.4"/>
+        <ellipse cx="62" cy="14" rx="12" ry="7" transform="rotate(20 62 14)" fill="#4a7c59" opacity="0.4"/>
+      </svg>
+    </div>
+    <p class="footer-monogram">S <span class="script-amp">&amp;</span> M</p>
+    <p class="footer-date">October 4, 2026 · Chicago, Illinois</p>
+    <p class="footer-tagline">Made with love in the city we call home.</p>
+    <nav class="footer-nav">
+      <a href="#our-story">Our Story</a>
+      <span>·</span>
+      <a href="#details">Details</a>
+      <span>·</span>
+      <a href="#gallery">Gallery</a>
+      <span>·</span>
+      <a href="#travel">Travel</a>
+      <span>·</span>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
