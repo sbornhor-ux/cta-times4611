@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam & Molly — October 4, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="loading">
+
+  <!-- Page loader -->
+  <div class="loader" id="loader">
+    <div class="loader-monogram">S <span>&amp;</span> M</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-monogram">S <span class="amp">&amp;</span> M</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#our-story" class="nav-link">Our Story</a></li>
+        <li><a href="#details" class="nav-link">Details</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#travel" class="nav-link">Travel</a></li>
+        <li><a href="#registry" class="nav-link">Registry</a></li>
+        <li><a href="#rsvp" class="nav-rsvp nav-link">RSVP</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <button class="mobile-menu-close" id="mobile-close">✕</button>
+    <ul>
+      <li><a href="#our-story">Our Story</a></li>
+      <li><a href="#details">Details</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#travel">Travel</a></li>
+      <li><a href="#registry">Registry</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+    </ul>
+  </div>
+  <div class="mobile-menu-overlay" id="mobile-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <!-- Parallax layers -->
+    <div class="parallax-layer parallax-bg" id="parallax-bg"></div>
+    <div class="parallax-layer parallax-mid" id="parallax-mid">
+      <div class="hero-leaves hero-leaves--left">
+        <svg viewBox="0 0 300 700" xmlns="http://www.w3.org/2000/svg">
+          <path class="branch" d="M150,680 C155,580 110,500 130,400 C150,300 200,270 150,180 C125,130 105,80 150,20" stroke="#5a8f6a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <ellipse class="leaf l1" cx="90" cy="310" rx="72" ry="38" transform="rotate(-35 90 310)" fill="#4a7c59"/>
+          <ellipse class="leaf l2" cx="210" cy="260" rx="65" ry="34" transform="rotate(28 210 260)" fill="#3d6b4a"/>
+          <ellipse class="leaf l3" cx="80" cy="410" rx="78" ry="42" transform="rotate(-42 80 410)" fill="#5a8f6a"/>
+          <ellipse class="leaf l4" cx="215" cy="360" rx="70" ry="37" transform="rotate(22 215 360)" fill="#4a7c59"/>
+          <ellipse class="leaf l5" cx="95" cy="180" rx="58" ry="30" transform="rotate(-25 95 180)" fill="#3d6b4a"/>
+          <ellipse class="leaf l6" cx="200" cy="140" rx="52" ry="28" transform="rotate(32 200 140)" fill="#5a8f6a"/>
+          <circle class="bloom b1" cx="148" cy="180" r="16" fill="#c9a0b0"/>
+          <circle cx="140" cy="164" r="10" fill="#d4b0c0"/>
+          <circle cx="158" cy="168" r="10" fill="#c9a0b0"/>
+          <circle cx="148" cy="156" r="11" fill="#d4b0c0"/>
+          <circle class="bloom b2" cx="150" cy="20" r="14" fill="#e8d0da"/>
+          <circle cx="142" cy="8" r="9" fill="#c9a0b0"/>
+          <circle cx="160" cy="12" r="9" fill="#d4b0c0"/>
+        </svg>
+      </div>
+      <div class="hero-leaves hero-leaves--right">
+        <svg viewBox="0 0 300 700" xmlns="http://www.w3.org/2000/svg" style="transform:scaleX(-1)">
+          <path class="branch" d="M150,680 C155,580 110,500 130,400 C150,300 200,270 150,180 C125,130 105,80 150,20" stroke="#5a8f6a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <ellipse class="leaf l1" cx="90" cy="310" rx="72" ry="38" transform="rotate(-35 90 310)" fill="#4a7c59"/>
+          <ellipse class="leaf l2" cx="210" cy="260" rx="65" ry="34" transform="rotate(28 210 260)" fill="#3d6b4a"/>
+          <ellipse class="leaf l3" cx="80" cy="410" rx="78" ry="42" transform="rotate(-42 80 410)" fill="#5a8f6a"/>
+          <ellipse class="leaf l4" cx="215" cy="360" rx="70" ry="37" transform="rotate(22 215 360)" fill="#4a7c59"/>
+          <ellipse class="leaf l5" cx="95" cy="180" rx="58" ry="30" transform="rotate(-25 95 180)" fill="#3d6b4a"/>
+          <ellipse class="leaf l6" cx="200" cy="140" rx="52" ry="28" transform="rotate(32 200 140)" fill="#5a8f6a"/>
+          <circle class="bloom b1" cx="148" cy="180" r="16" fill="#c9a0b0"/>
+          <circle cx="140" cy="164" r="10" fill="#d4b0c0"/>
+          <circle cx="158" cy="168" r="10" fill="#c9a0b0"/>
+          <circle cx="148" cy="156" r="11" fill="#d4b0c0"/>
+          <circle class="bloom b2" cx="150" cy="20" r="14" fill="#e8d0da"/>
+          <circle cx="142" cy="8" r="9" fill="#c9a0b0"/>
+          <circle cx="160" cy="12" r="9" fill="#d4b0c0"/>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Petals canvas -->
+    <canvas class="petals-canvas" id="petals"></canvas>
+
+    <!-- Hero content -->
+    <div class="parallax-layer parallax-front hero-content" id="parallax-front">
+      <p class="hero-eyebrow reveal-fade">Together with their families</p>
+      <h1 class="hero-names reveal-up">Sam <span class="script-amp">&amp;</span> Molly</h1>
+      <div class="hero-divider reveal-fade">
+        <span class="divider-line"></span>
+        <svg class="divider-ornament" viewBox="0 0 60 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30,12 C28,6 22,4 18,8 C14,12 18,18 24,16 C28,14 30,12 30,12 C30,12 32,10 36,8 C42,6 46,12 42,16 C38,20 32,18 30,12Z" fill="#c9a0b0" opacity="0.8"/>
+          <circle cx="30" cy="12" r="2.5" fill="#e8d0da"/>
+        </svg>
+        <span class="divider-line"></span>
+      </div>
+      <p class="hero-date reveal-fade">Saturday, the Fourth of October</p>
+      <p class="hero-year reveal-fade">Two Thousand and Twenty-Six</p>
+      <p class="hero-location reveal-fade">Chicago, Illinois</p>
+      <a href="#rsvp" class="hero-cta reveal-up">Kindly Reply</a>
+    </div>
+
+    <div class="hero-scroll-hint" id="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Countdown -->
+  <section class="countdown-bar" id="countdown-bar">
+    <div class="countdown-inner">
+      <div class="countdown-unit">
+        <span class="countdown-number" id="days">---</span>
+        <span class="countdown-label">Days</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="hours">--</span>
+        <span class="countdown-label">Hours</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="minutes">--</span>
+        <span class="countdown-label">Minutes</span>
+      </div>
+      <span class="countdown-sep">·</span>
+      <div class="countdown-unit">
+        <span class="countdown-number" id="seconds">--</span>
+        <span class="countdown-label">Seconds</span>
+      </div>
+    </div>
+    <p class="countdown-tagline">Until we say "I do"</p>
+  </section>
+
+  <!-- Our Story -->
+  <section class="section story" id="our-story">
+    <div class="section-header">
+      <p class="section-eyebrow reveal-fade">How It Happened</p>
+      <h2 class="section-title reveal-up">Our Story</h2>
+      <div class="section-ornament reveal-fade">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,15 Q50,5 100,15 Q150,25 190,15" stroke="#a8bfab" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="15" r="4" fill="#c9a0b0"/>
+          <circle cx="60" cy="10" r="2.5" fill="#4a7c59" opacity="0.6"/>
+          <circle cx="140" cy="20" r="2.5" fill="#4a7c59" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="story-timeline">
+      <div class="timeline-spine"></div>
+
+      <div class="timeline-item tl-left reveal-left">
+        <div class="timeline-photo placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="60" cy="80" rx="30" ry="18" transform="rotate(-20 60 80)" fill="#a8bfab" opacity="0.5"/>
+                <ellipse cx="75" cy="65" rx="25" ry="15" transform="rotate(15 75 65)" fill="#4a7c59" opacity="0.3"/>
+                <circle cx="60" cy="45" r="20" fill="#c9a0b0" opacity="0.25"/>
+                <circle cx="60" cy="45" r="13" fill="#d4b0c0" opacity="0.3"/>
+                <circle cx="60" cy="45" r="6" fill="#e8d0da" opacity="0.5"/>
+              </svg>
+            </div>
+            <p>Add your photo</p>
+            <small>When you first met</small>
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2020</span>
+          <h3>The Beginning</h3>
+          <p>Every great love story has a fateful first chapter. Add a line or two here about how you two first crossed paths — the city, the circumstances, the spark that started everything.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item tl-right reveal-right">
+        <div class="timeline-content">
+          <span class="timeline-date">2022</span>
+          <h3>Adventures Together</h3>
+          <p>From cozy Chicago winters to wherever the road took you, this is where your story deepened. Replace this with your own memory — a trip, a turning point, a season that changed things.</p>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-photo placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60,100 C60,70 40,50 60,30 C80,10 90,30 80,50 C70,70 65,80 60,100" fill="#4a7c59" opacity="0.2"/>
+                <ellipse cx="42" cy="55" rx="22" ry="12" transform="rotate(-30 42 55)" fill="#a8bfab" opacity="0.5"/>
+                <ellipse cx="80" cy="45" rx="20" ry="11" transform="rotate(25 80 45)" fill="#4a7c59" opacity="0.3"/>
+                <circle cx="60" cy="30" r="12" fill="#c9a0b0" opacity="0.3"/>
+              </svg>
+            </div>
+            <p>Add your photo</p>
+            <small>A favorite adventure</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item tl-left reveal-left">
+        <div class="timeline-photo placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="55" r="28" fill="#c9a0b0" opacity="0.18"/>
+                <circle cx="60" cy="55" r="20" fill="#d4b0c0" opacity="0.22"/>
+                <circle cx="60" cy="55" r="12" fill="#e8d0da" opacity="0.35"/>
+                <ellipse cx="35" cy="80" rx="28" ry="14" transform="rotate(-20 35 80)" fill="#4a7c59" opacity="0.25"/>
+                <ellipse cx="88" cy="75" rx="24" ry="12" transform="rotate(18 88 75)" fill="#a8bfab" opacity="0.4"/>
+              </svg>
+            </div>
+            <p>Add your photo</p>
+            <small>Engagement photo</small>
+          </div>
+        </div>
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">2025</span>
+          <h3>She Said Yes</h3>
+          <p>The proposal. Tell it exactly as it happened — where you were, what was said, what made it perfect. This is the one everyone reads twice.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave divider -->
+  <div class="wave-divider wave-divider--green">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z" fill="#3d6b4a"/>
+    </svg>
+  </div>
+
+  <!-- Event Details -->
+  <section class="section details" id="details">
+    <div class="details-bg-pattern"></div>
+    <div class="section-header">
+      <p class="section-eyebrow reveal-fade" style="color:rgba(248,244,237,0.6)">Join Us</p>
+      <h2 class="section-title reveal-up" style="color:var(--cream)">The Details</h2>
+      <div class="section-ornament reveal-fade">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,15 Q50,5 100,15 Q150,25 190,15" stroke="rgba(248,244,237,0.3)" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="15" r="4" fill="#e8d0da"/>
+          <circle cx="60" cy="10" r="2.5" fill="rgba(248,244,237,0.4)"/>
+          <circle cx="140" cy="20" r="2.5" fill="rgba(248,244,237,0.4)"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="details-cards">
+      <div class="detail-card reveal-left">
+        <div class="detail-card-accent"></div>
+        <div class="detail-card-icon">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M40,10 L40,70" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M20,30 Q40,15 60,30" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M15,50 Q40,35 65,50" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <circle cx="40" cy="10" r="5" fill="#c9a0b0"/>
+            <circle cx="20" cy="30" r="3.5" fill="#c9a0b0"/>
+            <circle cx="60" cy="30" r="3.5" fill="#c9a0b0"/>
+            <circle cx="15" cy="50" r="3" fill="#c9a0b0"/>
+            <circle cx="65" cy="50" r="3" fill="#c9a0b0"/>
+          </svg>
+        </div>
+        <div class="detail-card-tag">Ceremony</div>
+        <h3 class="detail-card-venue">Lincoln Park<br/>Conservatory</h3>
+        <div class="detail-card-divider"></div>
+        <p class="detail-card-address">2391 N Stockton Drive<br/>Chicago, IL 60614</p>
+        <div class="detail-card-time">
+          <span class="time-label">Saturday, October 4, 2026</span>
+          <span class="time-value">4:00 in the Afternoon</span>
+        </div>
+        <p class="detail-card-note">Arrive by 3:30 PM. The ceremony takes place in the Fern Room among Victorian glasshouse palms. Cobblestone paths — please plan footwear accordingly.</p>
+        <div class="detail-card-map">
+          <div class="map-placeholder">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20,5 C13,5 8,10 8,17 C8,26 20,36 20,36 C20,36 32,26 32,17 C32,10 27,5 20,5Z" fill="#4a7c59" opacity="0.7"/><circle cx="20" cy="17" r="5" fill="#fff" opacity="0.9"/></svg>
+            <span>Lincoln Park Conservatory</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="detail-card reveal-right">
+        <div class="detail-card-accent"></div>
+        <div class="detail-card-icon">
+          <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18,65 L18,28 Q18,16 28,16 L52,16 Q62,16 62,28 L62,65" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <path d="M12,65 L68,65" stroke="#4a7c59" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            <rect x="30" y="36" width="20" height="22" rx="2" stroke="#4a7c59" stroke-width="1.2" fill="none"/>
+            <circle cx="40" cy="28" r="6" stroke="#c9a0b0" stroke-width="1.5" fill="none"/>
+            <circle cx="40" cy="28" r="2.5" fill="#c9a0b0"/>
+          </svg>
+        </div>
+        <div class="detail-card-tag">Reception</div>
+        <h3 class="detail-card-venue">Nic + Junior's</h3>
+        <div class="detail-card-divider"></div>
+        <p class="detail-card-address">2464 N Lincoln Ave<br/>Chicago, IL 60614</p>
+        <div class="detail-card-time">
+          <span class="time-label">Saturday, October 4, 2026</span>
+          <span class="time-value">6:00 in the Evening</span>
+        </div>
+        <p class="detail-card-note">Cocktail hour at 6:00 PM, dinner and dancing to follow. Expect fresh pasta, perfect pours, and a celebration that lasts well into the Chicago night.</p>
+        <div class="detail-card-map">
+          <div class="map-placeholder">
+            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><path d="M20,5 C13,5 8,10 8,17 C8,26 20,36 20,36 C20,36 32,26 32,17 C32,10 27,5 20,5Z" fill="#4a7c59" opacity="0.7"/><circle cx="20" cy="17" r="5" fill="#fff" opacity="0.9"/></svg>
+            <span>Nic + Junior's, Lincoln Ave</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="dress-code reveal-up">
+      <div class="dress-code-inner">
+        <div class="dress-code-icon-wrap">
+          <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25,5 L30,18 L44,18 L33,27 L37,40 L25,32 L13,40 L17,27 L6,18 L20,18 Z" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div>
+          <h4>Black Tie Optional</h4>
+          <p>We invite you to dress in the spirit of a Victorian garden party — florals, rich jewel tones, romantic silhouettes. Cobblestone and grass at the conservatory: please plan footwear accordingly.</p>
+        </div>
+        <div class="dress-code-icon-wrap">
+          <svg viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+            <path d="M25,5 L30,18 L44,18 L33,27 L37,40 L25,32 L13,40 L17,27 L6,18 L20,18 Z" fill="none" stroke="#d4b87a" stroke-width="1.5"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave divider reversed -->
+  <div class="wave-divider wave-divider--cream">
+    <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,40 C240,0 480,80 720,40 C960,0 1200,80 1440,40 L1440,0 L0,0 Z" fill="#3d6b4a"/>
+    </svg>
+  </div>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="section-header">
+      <p class="section-eyebrow reveal-fade">Us, in Pictures</p>
+      <h2 class="section-title reveal-up">Gallery</h2>
+      <div class="section-ornament reveal-fade">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,15 Q50,5 100,15 Q150,25 190,15" stroke="#a8bfab" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="15" r="4" fill="#c9a0b0"/>
+          <circle cx="60" cy="10" r="2.5" fill="#4a7c59" opacity="0.6"/>
+          <circle cx="140" cy="20" r="2.5" fill="#4a7c59" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item gallery-item--tall reveal-up" data-index="0" tabindex="0" role="button" aria-label="Open photo 1">
+        <div class="gallery-img placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 160" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60,150 C60,110 40,80 60,50 C80,20 95,35 85,60 C75,85 65,100 60,150" fill="#4a7c59" opacity="0.15"/>
+                <ellipse cx="38" cy="75" rx="30" ry="16" transform="rotate(-28 38 75)" fill="#a8bfab" opacity="0.4"/>
+                <ellipse cx="86" cy="60" rx="26" ry="14" transform="rotate(22 86 60)" fill="#4a7c59" opacity="0.25"/>
+                <circle cx="60" cy="50" r="18" fill="#c9a0b0" opacity="0.2"/>
+                <circle cx="60" cy="50" r="11" fill="#d4b0c0" opacity="0.25"/>
+              </svg>
+            </div>
+            <p>Your photo here</p>
+            <small>Portrait</small>
+          </div>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+
+      <div class="gallery-item reveal-up delay-1" data-index="1" tabindex="0" role="button" aria-label="Open photo 2">
+        <div class="gallery-img placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="60" cy="55" r="30" fill="#c9a0b0" opacity="0.15"/>
+                <ellipse cx="35" cy="80" rx="28" ry="14" transform="rotate(-15 35 80)" fill="#4a7c59" opacity="0.2"/>
+                <ellipse cx="88" cy="72" rx="24" ry="12" transform="rotate(20 88 72)" fill="#a8bfab" opacity="0.35"/>
+              </svg>
+            </div>
+            <p>Your photo here</p>
+            <small>Candid</small>
+          </div>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+
+      <div class="gallery-item reveal-up delay-2" data-index="2" tabindex="0" role="button" aria-label="Open photo 3">
+        <div class="gallery-img placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <path d="M60,100 C60,70 45,55 60,35 C75,15 85,30 78,50 C71,70 65,80 60,100" fill="#4a7c59" opacity="0.18"/>
+                <ellipse cx="40" cy="60" rx="25" ry="13" transform="rotate(-25 40 60)" fill="#a8bfab" opacity="0.45"/>
+              </svg>
+            </div>
+            <p>Your photo here</p>
+            <small>Adventure</small>
+          </div>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+
+      <div class="gallery-item gallery-item--wide reveal-up delay-1" data-index="3" tabindex="0" role="button" aria-label="Open photo 4">
+        <div class="gallery-img placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M100,90 C100,60 75,40 100,20 C125,0 140,15 130,35 C120,55 110,65 100,90" fill="#4a7c59" opacity="0.15"/>
+                <ellipse cx="65" cy="50" rx="35" ry="18" transform="rotate(-20 65 50)" fill="#a8bfab" opacity="0.35"/>
+                <ellipse cx="140" cy="42" rx="30" ry="16" transform="rotate(18 140 42)" fill="#4a7c59" opacity="0.2"/>
+                <circle cx="100" cy="28" r="16" fill="#c9a0b0" opacity="0.18"/>
+              </svg>
+            </div>
+            <p>Your photo here</p>
+            <small>Landscape — wide</small>
+          </div>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+
+      <div class="gallery-item reveal-up delay-2" data-index="4" tabindex="0" role="button" aria-label="Open photo 5">
+        <div class="gallery-img placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="55" cy="70" rx="32" ry="18" transform="rotate(-18 55 70)" fill="#4a7c59" opacity="0.2"/>
+                <circle cx="65" cy="45" r="22" fill="#c9a0b0" opacity="0.18"/>
+                <circle cx="65" cy="45" r="14" fill="#d4b0c0" opacity="0.22"/>
+              </svg>
+            </div>
+            <p>Your photo here</p>
+            <small>Engagement</small>
+          </div>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+
+      <div class="gallery-item reveal-up delay-3" data-index="5" tabindex="0" role="button" aria-label="Open photo 6">
+        <div class="gallery-img placeholder-photo">
+          <div class="placeholder-inner">
+            <div class="placeholder-botanical">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="60" cy="80" rx="38" ry="20" transform="rotate(-10 60 80)" fill="#a8bfab" opacity="0.35"/>
+                <path d="M60,90 C60,65 48,48 60,30 C72,12 82,28 75,48 C68,68 63,75 60,90" fill="#4a7c59" opacity="0.18"/>
+                <circle cx="60" cy="30" r="14" fill="#c9a0b0" opacity="0.22"/>
+              </svg>
+            </div>
+            <p>Your photo here</p>
+            <small>Favorite together</small>
+          </div>
+        </div>
+        <div class="gallery-overlay"><span>View</span></div>
+      </div>
+    </div>
+
+    <!-- Add photos note -->
+    <p class="gallery-note reveal-fade">Swap the placeholders with your Instagram exports by replacing each <code>&lt;div class="gallery-img"&gt;</code> with an <code>&lt;img&gt;</code> tag.</p>
+  </section>
+
+  <!-- Travel -->
+  <section class="section travel" id="travel">
+    <div class="travel-botanical">
+      <svg viewBox="0 0 200 400" xmlns="http://www.w3.org/2000/svg" opacity="0.08">
+        <path d="M100,390 C100,310 70,260 90,190 C110,120 150,110 100,60 C80,35 65,15 100,0" stroke="#3d6b4a" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <ellipse cx="60" cy="160" rx="65" ry="35" transform="rotate(-30 60 160)" fill="#3d6b4a"/>
+        <ellipse cx="140" cy="130" rx="58" ry="30" transform="rotate(25 140 130)" fill="#3d6b4a"/>
+      </svg>
+    </div>
+    <div class="section-header">
+      <p class="section-eyebrow reveal-fade">Getting Here</p>
+      <h2 class="section-title reveal-up">Travel &amp; Lodging</h2>
+      <div class="section-ornament reveal-fade">
+        <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10,15 Q50,5 100,15 Q150,25 190,15" stroke="#a8bfab" stroke-width="1" fill="none"/>
+          <circle cx="100" cy="15" r="4" fill="#c9a0b0"/>
+          <circle cx="60" cy="10" r="2.5" fill="#4a7c59" opacity="0.6"/>
+          <circle cx="140" cy="20" r="2.5" fill="#4a7c59" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+    <div class="travel-grid">
+      <div class="travel-card reveal-up">
+        <div class="travel-card-icon">✈</div>
+        <h4>Flying In</h4>
+        <p>Chicago O'Hare (ORD) and Midway (MDW) both serve the city. From ORD, the Blue Line CTA runs downtown in ~45 min. Rideshare is 30–40 min depending on traffic.</p>
+      </div>
+      <div class="travel-card reveal-up delay-1">
+        <div class="travel-card-icon">🏨</div>
+        <h4>Hotel Block</h4>
+        <p>We've reserved rooms at the <strong>Belden-Stratford</strong>, a historic landmark steps from Lincoln Park. Use code <strong>SMMOLLY26</strong> for our rate. Block expires September 1, 2026.</p>
+      </div>
+      <div class="travel-card reveal-up delay-2">
+        <div class="travel-card-icon">🚖</div>
+        <h4>Getting Around</h4>
+        <p>The conservatory and Nic + Junior's are both in Lincoln Park, less than 10 minutes apart. We'll run a shuttle between venues — details to follow.</p>
+      </div>
+      <div class="travel-card reveal-up delay-3">
+        <div class="travel-card-icon">🌳</div>
+        <h4>While You're Here</h4>
+        <p>Make a weekend of it — Lincoln Park Zoo, the lakefront, the Chicago History Museum, and endless great restaurants are within walking distance of both venues.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registry -->
+  <section class="section registry" id="registry">
+    <div class="registry-bg"></div>
+    <div class="registry-inner">
+      <div class="section-header">
+        <p class="section-eyebrow reveal-fade">If You Wish</p>
+        <h2 class="section-title reveal-up">Registry</h2>
+        <div class="section-ornament reveal-fade">
+          <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10,15 Q50,5 100,15 Q150,25 190,15" stroke="#a8bfab" stroke-width="1" fill="none"/>
+            <circle cx="100" cy="15" r="4" fill="#c9a0b0"/>
+            <circle cx="60" cy="10" r="2.5" fill="#4a7c59" opacity="0.6"/>
+            <circle cx="140" cy="20" r="2.5" fill="#4a7c59" opacity="0.6"/>
+          </svg>
+        </div>
+      </div>
+      <p class="registry-note reveal-fade">Your presence is the greatest gift. If you'd like to celebrate us further:</p>
+      <div class="registry-links">
+        <a href="#" class="registry-btn reveal-up">
+          <span class="registry-btn-store">Crate &amp; Barrel</span>
+          <span class="registry-btn-arrow">→</span>
+        </a>
+        <a href="#" class="registry-btn reveal-up delay-1">
+          <span class="registry-btn-store">Williams Sonoma</span>
+          <span class="registry-btn-arrow">→</span>
+        </a>
+        <a href="#" class="registry-btn reveal-up delay-2">
+          <span class="registry-btn-store">Honeyfund</span>
+          <span class="registry-btn-sub">Honeymoon Fund</span>
+          <span class="registry-btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+  <section class="section rsvp" id="rsvp">
+    <div class="rsvp-botanical-left">
+      <svg viewBox="0 0 200 600" xmlns="http://www.w3.org/2000/svg" opacity="0.15">
+        <path d="M100,580 C100,480 65,410 85,320 C105,230 155,210 100,140 C75,100 55,65 100,20" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <ellipse cx="55" cy="255" rx="65" ry="35" transform="rotate(-32 55 255)" fill="#fff"/>
+        <ellipse cx="148" cy="215" rx="58" ry="30" transform="rotate(24 148 215)" fill="#fff"/>
+        <circle cx="100" cy="140" r="22" fill="#fff"/>
+      </svg>
+    </div>
+    <div class="rsvp-inner">
+      <div class="section-header section-header--light">
+        <p class="section-eyebrow reveal-fade" style="color:rgba(248,244,237,0.6)">We Hope to See You</p>
+        <h2 class="section-title reveal-up" style="color:var(--cream)">Kindly Reply</h2>
+        <div class="section-ornament reveal-fade">
+          <svg viewBox="0 0 200 30" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10,15 Q50,5 100,15 Q150,25 190,15" stroke="rgba(248,244,237,0.3)" stroke-width="1" fill="none"/>
+            <circle cx="100" cy="15" r="4" fill="#e8d0da"/>
+            <circle cx="60" cy="10" r="2.5" fill="rgba(248,244,237,0.4)"/>
+            <circle cx="140" cy="20" r="2.5" fill="rgba(248,244,237,0.4)"/>
+          </svg>
+        </div>
+        <p class="rsvp-deadline reveal-fade">Please respond by <strong>September 1, 2026</strong></p>
+      </div>
+
+      <form class="rsvp-form reveal-up" id="rsvp-form" onsubmit="handleRsvp(event)" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your first name" required />
+          </div>
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Your last name" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label>Attendance</label>
+          <div class="radio-group">
+            <label class="radio-option">
+              <input type="radio" name="attendance" value="yes" required />
+              <span class="radio-custom"></span>
+              Joyfully Accepts
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="attendance" value="no" />
+              <span class="radio-custom"></span>
+              Regretfully Declines
+            </label>
+          </div>
+        </div>
+        <div class="form-group" id="meal-group">
+          <label>Meal Preference</label>
+          <div class="radio-group radio-group--meals">
+            <label class="radio-option">
+              <input type="radio" name="meal" value="beef" />
+              <span class="radio-custom"></span>
+              Beef
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="meal" value="fish" />
+              <span class="radio-custom"></span>
+              Fish
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="meal" value="vegetarian" />
+              <span class="radio-custom"></span>
+              Vegetarian
+            </label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="dietary">Notes for Us</label>
+          <textarea id="dietary" name="dietary" rows="3" placeholder="Dietary restrictions, allergies, or a note for the happy couple…"></textarea>
+        </div>
+        <button type="submit" class="rsvp-submit">
+          <span class="rsvp-submit-text">Send My Reply</span>
+          <span class="rsvp-submit-arrow">→</span>
+        </button>
+      </form>
+
+      <div class="rsvp-success" id="rsvp-success">
+        <div class="success-bloom">
+          <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="60" cy="60" r="28" fill="#c9a0b0" opacity="0.25"/>
+            <circle cx="60" cy="60" r="19" fill="#d4b0c0" opacity="0.35"/>
+            <circle cx="60" cy="60" r="10" fill="#e8d0da" opacity="0.6"/>
+            <ellipse cx="30" cy="85" rx="28" ry="14" transform="rotate(-20 30 85)" fill="#4a7c59" opacity="0.3"/>
+            <ellipse cx="92" cy="78" rx="24" ry="12" transform="rotate(18 92 78)" fill="#a8bfab" opacity="0.4"/>
+            <ellipse cx="28" cy="42" rx="22" ry="11" transform="rotate(-35 28 42)" fill="#4a7c59" opacity="0.25"/>
+            <ellipse cx="95" cy="38" rx="20" ry="10" transform="rotate(30 95 38)" fill="#a8bfab" opacity="0.35"/>
+          </svg>
+        </div>
+        <h3>Thank You!</h3>
+        <p>We've received your reply and can't wait to celebrate with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-botanical"></div>
+    <p class="footer-monogram">Sam <span class="script-amp">&amp;</span> Molly</p>
+    <p class="footer-date">October 4, 2026 · Chicago, Illinois</p>
+    <p class="footer-tagline">Made with love in the city we call home.</p>
+    <nav class="footer-nav">
+      <a href="#our-story">Our Story</a>
+      <span>·</span>
+      <a href="#details">Details</a>
+      <span>·</span>
+      <a href="#gallery">Gallery</a>
+      <span>·</span>
+      <a href="#travel">Travel</a>
+      <span>·</span>
+      <a href="#rsvp">RSVP</a>
+    </nav>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+    <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
+    <button class="lightbox-next" id="lightbox-next" aria-label="Next">›</button>
+    <div class="lightbox-content" id="lightbox-content">
+      <div class="lightbox-img-wrap" id="lightbox-img-wrap"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <div class="lightbox-overlay" id="lightbox-overlay"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
